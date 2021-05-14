@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Learn Sight Words
+  </title>
+</head>
+<body class="speech">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Lingo Kids</a>
+     
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/landing.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Log Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-speech">
+    <h1 class="h-speech">Sight Words</h1>
+    <br>
+    <button id="toggle" class="btn btn-toggle">
+      Reading
+    </button>
+
+    
+    <br>
+    <div id="text-box" class="text-box">
+      <div id="close" class="close">X</div>
+      <h3>Select Voice</h3>
+      <select id="voices"></select>
+      <textarea  id="text" placeholder="Enter text to read..."></textarea>
+      <button class="btn" id="read">Read Text</button>
+    </div>
+    <main class="m-speech"></main>
+  </div>
+  
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script> -->
+  <script src="app.js"></script>
+</body>
+</html>
