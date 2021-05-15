@@ -71,6 +71,8 @@ checkEmail(email);
 checkPasswordsMatch(password,password2);
 console.log(email.value);
 
+//firebase auth for sign in in users
+
 firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
   .then((userCredential) => {
     // Signed in

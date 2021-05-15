@@ -5,6 +5,7 @@ const textarea = document.getElementById('text');
 const readBtn = document.getElementById('read');
 const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
+//data for sight words
 const data = [
   {
     image: './img/rain.jpeg',
@@ -82,7 +83,7 @@ function createBox(item) {
 
   main.appendChild(box);
 }
-
+// fetch voices from the builtin speech function
 const message = new SpeechSynthesisUtterance();
 let voices = [];
 
@@ -109,6 +110,7 @@ function setVoice(e) {
   message.voice = voices.find(voice => voice.name === e.target.value);
 }
 
+//adding event listeners
 speechSynthesis.addEventListener("voiceschanged", getVoices);
 
 toggleBtn.addEventListener("click", () => {
